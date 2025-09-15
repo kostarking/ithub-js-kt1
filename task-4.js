@@ -13,8 +13,6 @@
 const word = prompt('Ваше слово')
 
 const wordLength = word.length // длина слова
-wordLength ** 0.5 // квадратный корень
-Math.pow(wordLength, 0.5) // квадратный корень
 Math.sqrt(wordLength) // квадратный корень
 
 const result = 1 // дописать логику

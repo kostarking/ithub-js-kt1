@@ -30,9 +30,40 @@ const b = Number(prompt('Число B'))
 const sign = prompt('Операция (*/+-)')
 
 // TODO добавить проверки валидности данных
-
+if (!Number.isFinite(a)){
+    throw new Error('число А введено некоректно')
+}
+if (!Number.isFinite(b)){
+    throw new Error('число Б введено некоректно')
+}
+if(sign !=="+" && sign !== "-" && sign !== "*" && sign !== "/")
+    {
+        throw new Error('действие введено некоректно');  
+    }
 let result
 
 // TODO вычислять result через switch
+switch (sign){
+    case '+':
+        result = a+b
+        break;
+    case '+':
+        result = a+b
+        break;
+    case '-':
+        result = a-b
+        break;
+    case '*':
+        result = a*b
+        break;
+    case '/':
+        if (B===0){
+            result = 'На ноль делить нельзя!'
+        } else{
+            result = a*b
+        }
 
+        
+        break;
+}
 console.log(result)
