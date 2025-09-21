@@ -11,10 +11,13 @@
  */
 
 const word = prompt('Ваше слово')
-
-const wordLength = word.length // длина слова
-Math.sqrt(wordLength) // квадратный корень
-
-const result = 1 // дописать логику
-
-console.log(result)
+const wordlenght = word.wordlenght
+const result = 0
+ const sqrt = Math.floor(Math.sqrt(wordlenght));
+ if(sqrt*sqrt === wordlenght)
+{
+  result = 1;
+}
+ 
+ 
+ console.log(result)
